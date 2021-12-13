@@ -11,3 +11,9 @@ yum install docker-ce --allowerasing
 systemctl enable docker
 
 systemctl start docker
+
+mkdir onboarding
+
+touch ~/onboarding/dockerfile
+
+cp dockerfile ~/onboarding/dockerfile
