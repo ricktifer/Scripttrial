@@ -1,21 +1,27 @@
 #!/bin/bash
-#This is a test script to setup my cloud server to be ready for docker
+#This is a test script to setup my cloud server to be ready for docker, all comments will be below lines they refer to
 
 cd ~
+#Changes directory to home for ease of future steps
 
 yum install -y yum-utils device-mapper-persistent-data lvm2
 
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 Adding repo from: https://download.docker.com/linux/centos/docker-ce.repo
+#Install yum to make sure all is up to date and download docker
 
 yum install docker-ce -y --allowerasing
+#Installs docker ce, need to check if -y is in right place
 
 systemctl enable docker
 
 systemctl start docker
+#starts docker after enabling
 
 mkdir onboarding
 
 touch ~/onboarding/dockerfile
+#Make directory for onboarding and create "dockerfile"
 
 cp ~/Scripttrial/dockerfile ~/onboarding/dockerfile
+#Copies dockerfile from repo to destination
