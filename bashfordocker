@@ -25,5 +25,5 @@ cp Scripttrial/dockerfile onboarding/dockerfile
 
 cd onboarding
 
-Docker build .
+docker build .
 #builds out docker container from current directory
