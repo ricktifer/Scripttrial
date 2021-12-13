@@ -22,3 +22,8 @@ touch onboarding/dockerfile
 
 cp Scripttrial/dockerfile onboarding/dockerfile
 #Copies dockerfile from repo to destination
+
+cd onboarding
+
+Docker build .
+#builds out docker container from current directory
