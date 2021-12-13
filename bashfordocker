@@ -18,4 +18,4 @@ mkdir onboarding
 
 touch ~/onboarding/dockerfile
 
-cp dockerfile ~/onboarding/dockerfile
+cp ~/Scripttrial/dockerfile ~/onboarding/dockerfile
